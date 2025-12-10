@@ -7,11 +7,22 @@ The primary objective is to investigate whether multilingual language models (su
 ## 📊 Results
 
 We trained a linear probe for the **Parse Distance** task using embeddings from the 12th layer of `bert-base-multilingual-cased`.
+Despite initial alignment challenges regarding Spanish contractions, our results show a strong Spearman correlation, suggesting that mBERT captures significant syntactic information for the Spanish language.
 
+## Experimental Setup
+* **Model:** mBERT (`bert-base-multilingual-cased`), frozen weights.
+* **Layer:** Last hidden layer (Layer 12).
+* **Task:** Parse Distance (predicting syntactic distance between word pairs).
+* **Training:** 30 epochs, L1 Loss, Batch size 32.
+
+We evaluated the probe using UUAS (Undirected Unlabeled Attachment Score) and Spearman Correlation.
 | Metric | Result (Spanish) | Interpretation |
 | :--- | :---: | :--- |
 | **Spearman Correlation** | **0.735** | **High correlation.** Confirms that mBERT captures the geometric distance between syntactically related words in Spanish. |
-| **UUAS** | **0.504** | **Reconstruction accuracy.** Significantly outperforms the random baseline (0.44), demonstrating latent structural learning. |
+| **UUAS** | **0.504** | **Reconstruction accuracy.** Outperforms the random baseline (0.44), demonstrating latent structural learning. |
+
+> **Note:** The discrepancy in UUAS compared to the original English paper is attributed to mBERT sharing capacity across 104 languages and the richer morphology of Spanish.
+
 ## 🛠️ Modifications & Engineering
 
 To adapt the original 2019 codebase to a modern environment and the specific linguistic features of Spanish, the following key implementations were made:
