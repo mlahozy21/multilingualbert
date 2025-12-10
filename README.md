@@ -32,10 +32,11 @@ The original distance calculation algorithm in `task.py` was iterative and prone
 ## 🚀 Reproduction Steps
 ### 1. Requirements
 Install the necessary Python packages:
-
+```
 Bash
 
 pip install torch transformers h5py tqdm matplotlib numpy pyyaml
+```
 ### 2. Dataset Download
 Download the Universal Dependencies Spanish AnCora corpus (v2.x) from the official repository: UD_Spanish-AnCora GitHub.
 
