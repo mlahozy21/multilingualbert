@@ -29,7 +29,7 @@ The original distance calculation algorithm in `task.py` was iterative and prone
 * **Windows/UTF-8:** Enforced `utf-8` encoding across all file I/O operations to correctly handle Spanish accents and special characters on Windows systems.
 
 
-##🚀 Reproduction Steps
+## 🚀 Reproduction Steps
 ### 1. Requirements
 Install the necessary Python packages:
 
