@@ -71,7 +71,7 @@ Train the structural probe using the configuration file:
 ```
 Bash
 
-python structural-probes/run_experiment.py example/config/es_ancora.yaml
+python structural-probes/run_experiment.py es_ancora.yaml
 ```
 ## 📈 Visualization
 Upon completion, results are saved in results/. You will find:
