@@ -11,7 +11,7 @@ A linear probe was trained for the **Parse Distance** task using embeddings from
 | Metric | Result (Spanish) | Interpretation |
 | :--- | :---: | :--- |
 | **Spearman Correlation** | **0.735** | **High correlation.** Confirms that mBERT captures the geometric distance between syntactically related words in Spanish. |
-| **UUAS** | **0.50** | **Reconstruction accuracy.** Significantly outperforms the random baseline, demonstrating latent structural learning. |
+| **UUAS** | **0.504** | **Reconstruction accuracy.** Significantly outperforms the random baseline, demonstrating latent structural learning. |
 
 ## 🛠️ Modifications & Engineering
 
