@@ -85,7 +85,6 @@ dev.spearmanr: Quantitative correlation metrics.
 ## 📄 References
 If you use this code or methodology, please cite the original paper and the dataset:
 
-Fragmento de código
 
 @inproceedings{hewitt2019structural,
   title={A Structural Probe for Finding Syntax in Word Representations},
